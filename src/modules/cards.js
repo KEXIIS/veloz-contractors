@@ -19,10 +19,10 @@ const esc = (s) =>
 export function cardHTML(p, { eager = false } = {}) {
   const title = pick(p.title);
   return `
-  <li class="card" data-cat="${p.category}">
+  <li class="card" data-cat="${esc(p.category)}">
     <a class="card-link" href="/projects/project.html?id=${encodeURIComponent(p.id)}">
       <figure class="card-img">
-        <img src="${p.cover}" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"
+        <img src="${esc(p.cover)}" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"
              width="1400" height="933" alt="${esc(title)}, placeholder photo" />
       </figure>
       <span class="card-meta">

@@ -6,6 +6,9 @@ import { onLang, pick, setSeo } from "../modules/i18n.js";
 import { cardHTML, catLabel } from "../modules/cards.js";
 import { initSlider } from "../modules/slider.js";
 
+const esc = (s) =>
+  String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+
 boot();
 
 const id = new URLSearchParams(location.search).get("id");
@@ -54,7 +57,7 @@ if (!project) {
       .map(
         (src, i) => `
       <li class="pd-shot">
-        <img src="${src}" loading="lazy" decoding="async" width="1400" height="933" alt="${title}, photo ${i + 1}, placeholder" />
+        <img src="${esc(src)}" loading="lazy" decoding="async" width="1400" height="933" alt="${esc(title)}, photo ${i + 1}, placeholder" />
         <span class="pd-shot-n">${String(i + 1).padStart(2, "0")}</span>
       </li>`
       )
