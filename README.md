@@ -60,9 +60,8 @@ The first three projects in the list appear as "Recent work" on the home page.
 ## Placeholders to fill in (all in `src/config.js`)
 
 - `business.email` — **TODO**, hidden on the site until filled in
-- `contactEndpoint` — set to the Netlify function (see "Contact form email"
-  below). In `npm run dev` the form runs in demo mode (success message,
-  data logged to the console).
+- Contact form: uses Netlify Forms (see "Contact form email" below). In
+  `npm run dev` it runs in demo mode (success message, data in the console).
 - `rating.url` — currently a Google Maps search for the business; swap for
   the exact Google reviews link when you have it.
 - If the 4.8 / 105 reviews numbers change, update them in `config.js` **and**
