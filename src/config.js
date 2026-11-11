@@ -207,8 +207,8 @@ export const config = {
       es: ["{title} | Veloz Contractors", "{scope}. Un proyecto de Veloz Contractors en el sur de la Florida."],
     },
     process: {
-      en: ["How we work | Veloz Contractors, Hialeah FL", "From the first call to the final walkthrough: how a Veloz Contractors remodel runs."],
-      es: ["Cómo trabajamos | Veloz Contractors, Hialeah FL", "De la primera llamada al recorrido final: así corre una remodelación con Veloz Contractors."],
+      en: ["Process | Veloz Contractors, Hialeah FL", "From the first call to the final walkthrough: how a Veloz Contractors remodel runs."],
+      es: ["Proceso | Veloz Contractors, Hialeah FL", "De la primera llamada al recorrido final: así corre una remodelación con Veloz Contractors."],
     },
     contact: {
       en: ["Contact | Veloz Contractors, Hialeah FL", "Tell us about your home. Call 786-506-1891, DM us on Instagram or send a message. 8075 W 23rd Ave, Hialeah, FL."],
