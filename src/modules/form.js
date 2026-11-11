@@ -1,8 +1,8 @@
 // Contact form: inline validation (checked when a field is left, cleared live
 // once fixed), selects + "how did you find us" chips per language, photo
-// picker (front-end only), warm "we'll stay in touch" success state that can
-// be reopened. POSTs to config.contactEndpoint; "" = demo mode.
-import { config } from "../config.js";
+// picker, warm "we'll stay in touch" success state that can be reopened.
+// Submits to Netlify Forms (emailed from the Netlify dashboard); in `npm run
+// dev` there is no Netlify, so it runs in demo mode.
 import { t, onLang } from "./i18n.js";
 
 const RULES = {
@@ -14,6 +14,14 @@ const RULES = {
 const TYPES = ["Kitchens", "Bathrooms", "Fullhome", "Builtins", "Tile", "Emergency"];
 const WHEN = ["Asap", "13", "36", "Planning"];
 const HEARD = ["Ig", "Google", "Friend", "Job", "Other"];
+
+// the email is read in English whatever language the visitor used
+const LABELS = {
+  type: { kitchens: "Kitchen", bathrooms: "Bathroom", fullhome: "Full remodel", builtins: "Closet / built-ins", tile: "Tile / flooring", emergency: "Emergency repair", other: "Something else" },
+  when: { asap: "As soon as possible", "13": "In the next 1-3 months", "36": "In 3-6 months", planning: "Just planning for now" },
+  heard: { ig: "Instagram", google: "Google", friend: "A friend or neighbor", job: "Saw one of our jobs", other: "Other" },
+};
+const MAX_PHOTOS = 3;
 
 async function shrink(file) {
   try {
@@ -131,16 +139,20 @@ export function initForm() {
     label.textContent = t("fSending");
 
     try {
-      if (config.contactEndpoint && !import.meta.env.DEV) {
-        // phone photos are huge; shrink them so the request stays small
-        const shrunk = await Promise.all([...photos.files].slice(0, 6).map(shrink));
+      if (!import.meta.env.DEV) {
+        for (const k of ["type", "when", "heard"]) {
+          const v = data.get(k);
+          if (v) data.set(k, LABELS[k][v] || v);
+        }
+        // phone photos are huge; shrink them (Netlify takes one file per field)
+        const shrunk = await Promise.all([...photos.files].slice(0, MAX_PHOTOS).map(shrink));
         data.delete("photos");
-        shrunk.forEach((f) => data.append("photos", f, f.name));
-        const res = await fetch(config.contactEndpoint, { method: "POST", body: data });
+        shrunk.forEach((file, i) => data.set("photo" + (i + 1), file, file.name));
+        const res = await fetch(form.getAttribute("action"), { method: "POST", body: data });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
       } else {
         await new Promise((r) => setTimeout(r, 900));
-        console.info("[contact] demo mode — set config.contactEndpoint. Data:",
+        console.info("[contact] demo mode (dev only). Data:",
           Object.fromEntries([...data.entries()].map(([k, v]) => [k, v instanceof File ? v.name : v])));
       }
       sentName = data.get("name").trim().split(/\s+/)[0];

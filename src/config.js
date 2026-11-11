@@ -45,10 +45,6 @@ export const config = {
   directionsUrl:
     "https://www.google.com/maps/dir/?api=1&destination=8075+W+23rd+Ave,+Hialeah,+FL+33016",
 
-  // Contact form POSTs here (Netlify function -> email). In `npm run dev` the
-  // function doesn't exist, so the form falls back to demo mode there.
-  contactEndpoint: "/.netlify/functions/contact",
-
   // Real Google reviews, verbatim. Kept in English in both languages.
   reviews: [
     { id: "sandra", quote: "Phillip Veloz did an amazing job on my kitchen. Great communication and dedication was outstanding!!", author: "Sandra W." },

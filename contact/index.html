@@ -44,7 +44,13 @@
     <div class="ct-grid">
       <section class="ct-form-wrap" aria-labelledby="form-title">
         <h2 class="ct-h" id="form-title" data-i18n="ctFormTitle">Send us a message</h2>
-        <form class="qform" data-qform novalidate>
+        <form class="qform" data-qform name="contact" method="POST" action="/contact/" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="website" novalidate>
+          <input type="hidden" name="form-name" value="contact" />
+          <!-- fields filled by script; declared here (disabled) so Netlify records them -->
+          <input type="hidden" name="heard" disabled />
+          <input type="file" name="photo1" disabled hidden />
+          <input type="file" name="photo2" disabled hidden />
+          <input type="file" name="photo3" disabled hidden />
           <div class="f-pair">
             <div class="f-row">
               <label for="qf-name" data-i18n="fName">Your name</label>

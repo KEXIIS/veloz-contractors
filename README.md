@@ -84,18 +84,11 @@ Both serve `/projects/`, `/process/`, `/contact/` as folders automatically.
 
 ## Contact form email
 
-The form posts to `netlify/functions/contact.mjs`, which emails each request
-(Name, Phone, Project, Message, Photo, Submitted in Miami time) through
-[Resend](https://resend.com). Photos are shrunk in the browser and attached.
+The form is a Netlify Form (`name="contact"`). Netlify detects it on deploy
+and stores every submission, photos included (up to 3, shrunk in the browser).
 
-1. Create a Resend account and an API key.
-2. In Netlify → Site settings → Environment variables add:
-   - `RESEND_API_KEY` — the key
-   - `CONTACT_TO` — recipient(s), comma-separated
-   - `CONTACT_FROM` (optional) — e.g. `Veloz Website <leads@theirdomain.com>`
-     once the domain is verified in Resend
-3. Deploy from the project/repo (not by dropping `dist/`), so Netlify builds
-   the function.
-
-Until a domain is verified, mail is sent from `onboarding@resend.dev` and
-Resend only delivers it to the address the Resend account was created with.
+1. Deploy from the repo so Netlify builds the site.
+2. Netlify → Forms → Form notifications → Add notification → Email, and enter
+   the address that should receive requests.
+3. Submissions also appear under Forms → contact. Spam is filtered by the
+   honeypot field and Netlify's built-in filter.
