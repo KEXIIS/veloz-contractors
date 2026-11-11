@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project — Veloz Contractors</title>
+  <meta name="description" content="A Veloz Contractors project in South Florida." />
+  <!--@include head-->
+  <script type="module" src="/src/pages/project.js"></script>
+</head>
+<body data-page="projects">
+  <!--@include nav-->
+
+  <main id="main">
+    <article class="pd" data-pd>
+      <header class="page-head pd-head">
+        <a class="text-link pd-back" href="/projects/"><span aria-hidden="true">←</span> <span data-i18n="pdBack">All projects</span></a>
+        <h1 class="page-title pd-title" data-pd-title>&nbsp;</h1>
+        <dl class="pd-facts">
+          <div><dt data-i18n="pdType">Type</dt><dd data-pd-type></dd></div>
+          <div><dt data-i18n="pdArea">Area</dt><dd data-i18n="pdAreaValue">South Florida</dd></div>
+          <div><dt data-i18n="pdScope">Scope</dt><dd data-pd-scope></dd></div>
+        </dl>
+      </header>
+
+      <figure class="pd-cover">
+        <img data-pd-cover alt="" width="1400" height="933" fetchpriority="high" />
+      </figure>
+
+      <div class="pd-story">
+        <p data-pd-story></p>
+      </div>
+
+      <section class="pd-ba ba" data-pd-ba hidden aria-labelledby="pd-ba-title">
+        <h2 class="pd-h" id="pd-ba-title" data-i18n="pdBeforeAfter">Before and after</h2>
+        <figure class="ba-figure" data-ba>
+          <img class="ba-img ba-after" data-ba-after-img alt="" loading="lazy" decoding="async" width="1400" height="933" />
+          <img class="ba-img ba-before" data-ba-before alt="" loading="lazy" decoding="async" width="1400" height="933" />
+          <span class="ba-tag ba-tag-before" data-ba-tag-before data-i18n="baBefore" aria-hidden="true">Before</span>
+          <span class="ba-tag ba-tag-after" data-ba-tag-after data-i18n="baAfter" aria-hidden="true">After</span>
+          <div class="ba-divider" data-ba-divider aria-hidden="true"></div>
+          <div class="ba-handle" data-ba-handle role="slider" tabindex="0"
+               aria-label="Compare before and after" data-i18n-label="baHandle"
+               aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+            <svg viewBox="0 0 24 16" aria-hidden="true"><path d="M8 1 1 8l7 7M16 1l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </figure>
+        <p class="ba-hint" data-i18n="baHint">Drag the handle, or use the arrow keys</p>
+      </section>
+
+      <section class="pd-gallery-wrap" aria-labelledby="pd-gal-title">
+        <h2 class="pd-h" id="pd-gal-title" data-i18n="pdGallery">Photos</h2>
+        <ol class="pd-gallery" data-pd-gallery></ol>
+      </section>
+
+      <section class="pd-review" data-pd-review hidden aria-labelledby="pd-rev-title">
+        <h2 class="pd-h" id="pd-rev-title" data-i18n="pdClient">What the client said</h2>
+        <blockquote lang="en">
+          <p class="pd-quote" data-pd-quote></p>
+          <footer class="rev-author"><b data-pd-author></b> · <span data-i18n="revSource">Google review</span></footer>
+        </blockquote>
+      </section>
+    </article>
+
+    <p class="pd-missing" data-pd-missing hidden>
+      <span data-i18n="pdNotFound">We couldn't find that project.</span>
+      <a class="text-link" href="/projects/" data-i18n="pdBack">All projects</a>
+    </p>
+
+    <section class="feat pd-more" aria-labelledby="more-title">
+      <header class="band-head feat-head">
+        <h2 class="display" id="more-title" data-i18n="pdMore">More projects</h2>
+        <a class="text-link" href="/projects/"><span data-i18n="featAll">All projects</span> <span aria-hidden="true">↗</span></a>
+      </header>
+      <ul class="feat-grid" data-feat-grid></ul>
+    </section>
+
+    <section class="cta-band" aria-labelledby="cta-title">
+      <p class="cta-slogan" data-i18n="slogan">You dream it, we build it.</p>
+      <h2 class="display" id="cta-title" data-i18n="projCtaTitle">Want one like this?</h2>
+      <p class="sub" data-i18n="ctaText">Tell us about it. We'll call you back and talk it through.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-accent btn-big" href="/contact/" data-i18n="letsTalk">Let's talk</a>
+        <a class="btn btn-ghost btn-big" href="tel:+17865061891">786-506-1891</a>
+      </div>
+    </section>
+  </main>
+
+  <!--@include footer-->
+</body>
+</html>

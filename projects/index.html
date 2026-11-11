@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Veloz Contractors, Hialeah FL</title>
+  <meta name="description" content="Kitchens, bathrooms, closets, floors and full home remodels by Veloz Contractors in South Florida." />
+  <!--@include head-->
+  <script type="module" src="/src/pages/projects.js"></script>
+</head>
+<body data-page="projects">
+  <!--@include nav-->
+
+  <main id="main">
+    <header class="page-head">
+      <h1 class="page-title" data-i18n="projTitle">Projects</h1>
+      <div class="page-head-row">
+        <p class="page-intro" data-i18n="projIntro">Kitchens, bathrooms, closets and whole homes across South Florida.</p>
+        <p class="page-count" data-proj-count aria-live="polite"></p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter projects" data-i18n-label="projFilterLabel" data-filters>
+        <!-- filter chips rendered from config.projectCategories -->
+      </div>
+    </header>
+
+    <ul class="proj-grid" data-proj-grid>
+      <!-- project cards rendered from config.projects -->
+    </ul>
+
+    <section class="cta-band" aria-labelledby="cta-title">
+      <p class="cta-slogan" data-i18n="slogan">You dream it, we build it.</p>
+      <h2 class="display" id="cta-title" data-i18n="projCtaTitle">Want one like this?</h2>
+      <p class="sub" data-i18n="ctaText">Tell us about it. We'll call you back and talk it through.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-accent btn-big" href="/contact/" data-i18n="letsTalk">Let's talk</a>
+        <a class="btn btn-ghost btn-big" href="tel:+17865061891">786-506-1891</a>
+      </div>
+    </section>
+  </main>
+
+  <!--@include footer-->
+</body>
+</html>
