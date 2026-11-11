@@ -1,4 +1,4 @@
-// Reviews — one quote at a time, swipeable with the same physics as the
+// Reviews - one quote at a time, swipeable with the same physics as the
 // slider: 1:1 drag, velocity projection picks the landing slide, rubber-band
 // at the ends, springs carry the release velocity. Arrows + keyboard too.
 import { config } from "../config.js";

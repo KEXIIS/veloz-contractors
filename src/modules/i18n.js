@@ -1,4 +1,4 @@
-// EN/ES — fills [data-i18n], [data-i18n-ph], [data-i18n-label]; modules
+// EN/ES - fills [data-i18n], [data-i18n-ph], [data-i18n-label]; modules
 // subscribe with onLang to re-render what they own. The choice is remembered
 // across pages.
 import { config } from "../config.js";

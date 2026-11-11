@@ -1,5 +1,5 @@
 // Projects index: filter chips + card grid. Filtering cross-fades the cards
-// that stay and lets the others drop out — no layout jump-cut.
+// that stay and lets the others drop out - no layout jump-cut.
 import { boot, reducedMotion } from "../common.js";
 import { config } from "../config.js";
 import { t, onLang } from "../modules/i18n.js";

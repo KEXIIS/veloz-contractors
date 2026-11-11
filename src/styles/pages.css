@@ -106,7 +106,7 @@
 @media (min-width: 40rem) { .feat-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 64rem) { .feat-grid { grid-template-columns: repeat(3, 1fr); } }
 
-/* projects index: editorial rhythm — every third card spans wide */
+/* projects index: editorial rhythm - every third card spans wide */
 .proj-grid {
   display: grid;
   gap: clamp(2rem, 4vw, 3.2rem) clamp(1rem, 2vw, 1.6rem);

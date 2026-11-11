@@ -1,4 +1,4 @@
-# Veloz Contractors — website demo
+# Veloz Contractors - website demo
 
 Multi-page site for Veloz Contractors (home remodeling, Hialeah FL).
 Vite + vanilla JS, Motion for springs, GSAP ScrollTrigger only for the
@@ -31,8 +31,8 @@ needs to change.
 
 | File | Used for |
 | --- | --- |
-| `kitchen-hero.jpg` (1500px wide) + `kitchen-hero-900.jpg` (900px, phones) | Home hero — use a dark, warm kitchen shot; keep both sizes |
-| `kitchen-before-1.jpg` / `kitchen-after-1.jpg` | Home before/after slider + "Two-tone kitchen" project — **must be the same room from the same angle** |
+| `kitchen-hero.jpg` (1500px wide) + `kitchen-hero-900.jpg` (900px, phones) | Home hero - use a dark, warm kitchen shot; keep both sizes |
+| `kitchen-before-1.jpg` / `kitchen-after-1.jpg` | Home before/after slider + "Two-tone kitchen" project - **must be the same room from the same angle** |
 | `kitchen-after-2…4.jpg`, `bath-after-1…4.jpg`, `bath-before-1.jpg`, `closet-after-*.jpg`, `living-after-*.jpg`, `floor-after-*.jpg`, `coffee-bar-1.jpg`, `tile-work-1.jpg`, `repair-work-1.jpg`, `home-after-1.jpg` | Projects, services, process |
 
 Their Instagram (@velozcontractors) is full of exactly the right material:
@@ -48,21 +48,21 @@ site stays fast on phones.
 `src/config.js` → `projects`. The 9 entries there are **samples** built from
 the kinds of work on their Instagram. For each real job:
 
-- `id` — URL-safe name, e.g. `"miami-lakes-kitchen"`
-- `category` — one of `kitchens`, `bathrooms`, `wholehome`, `builtins`, `floors`, `repairs`
-- `cover`, `gallery` — photo paths in `/img`
-- `before` — optional; adds the drag-to-compare slider on the project page
-- `review` — optional; id of a review in `reviews` that matches the job
-- `title`, `scope`, `story` — each in `{ en, es }`
+- `id` - URL-safe name, e.g. `"miami-lakes-kitchen"`
+- `category` - one of `kitchens`, `bathrooms`, `wholehome`, `builtins`, `floors`, `repairs`
+- `cover`, `gallery` - photo paths in `/img`
+- `before` - optional; adds the drag-to-compare slider on the project page
+- `review` - optional; id of a review in `reviews` that matches the job
+- `title`, `scope`, `story` - each in `{ en, es }`
 
 The first three projects in the list appear as "Recent work" on the home page.
 
 ## Placeholders to fill in (all in `src/config.js`)
 
-- `business.email` — **TODO**, hidden on the site until filled in
+- `business.email` - **TODO**, hidden on the site until filled in
 - Contact form: uses Netlify Forms (see "Contact form email" below). In
   `npm run dev` it runs in demo mode (success message, data in the console).
-- `rating.url` — currently a Google Maps search for the business; swap for
+- `rating.url` - currently a Google Maps search for the business; swap for
   the exact Google reviews link when you have it.
 - If the 4.8 / 105 reviews numbers change, update them in `config.js` **and**
   in the JSON-LD blocks in `index.html` and `contact/index.html`.

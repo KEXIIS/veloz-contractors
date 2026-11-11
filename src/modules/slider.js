@@ -29,7 +29,7 @@ export function initSlider({ reducedMotion = false } = {}) {
     tagBefore.style.opacity = p < 0.12 ? 0 : 1;
     tagAfter.style.opacity = p > 0.88 ? 0 : 1;
     handle.setAttribute("aria-valuenow", Math.round(shown * 100));
-    handle.setAttribute("aria-valuetext", `${Math.round(shown * 100)}% — ${t("baBefore")}`);
+    handle.setAttribute("aria-valuetext", `${Math.round(shown * 100)}%, ${t("baBefore")}`);
   }
 
   function settleTo(target, velocity = 0) {

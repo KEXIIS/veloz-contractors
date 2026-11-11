@@ -1,4 +1,4 @@
-// Services — editorial numbered rows; each opens with a critically damped
+// Services - editorial numbered rows; each opens with a critically damped
 // spring on height to show a photo and two lines. One open at a time.
 import { config } from "../config.js";
 import { t, onLang, getLang } from "./i18n.js";
@@ -27,7 +27,7 @@ export function initServices({ reducedMotion = false } = {}) {
           <div class="svc-inner">
             <figure class="svc-photo">
               <img src="${s.photo}" loading="lazy" decoding="async" width="1200" height="750"
-                   alt="${t("svc" + k + "Name")} — placeholder photo, swap for a Veloz project" />
+                   alt="${t("svc" + k + "Name")}, placeholder photo, swap for a Veloz project" />
             </figure>
             <div class="svc-lines">
               <p>${t("svc" + k + "Line1")}</p>

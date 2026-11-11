@@ -23,7 +23,7 @@ export function cardHTML(p, { eager = false } = {}) {
     <a class="card-link" href="/projects/project.html?id=${encodeURIComponent(p.id)}">
       <figure class="card-img">
         <img src="${p.cover}" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"
-             width="1400" height="933" alt="${esc(title)} — placeholder photo" />
+             width="1400" height="933" alt="${esc(title)}, placeholder photo" />
       </figure>
       <span class="card-meta">
         <span class="card-title">${esc(title)}</span>

@@ -43,10 +43,10 @@ if (!project) {
 
     const cover = $("[data-pd-cover]");
     cover.src = project.cover;
-    cover.alt = `${title} — placeholder photo`;
+    cover.alt = `${title}, placeholder photo`;
     if (project.before) {
-      $("[data-ba-after-img]").alt = `${title}, after — placeholder photo`;
-      $("[data-ba-before]").alt = `${title}, before — placeholder photo`;
+      $("[data-ba-after-img]").alt = `${title}, after, placeholder photo`;
+      $("[data-ba-before]").alt = `${title}, before, placeholder photo`;
     }
 
     // numbered gallery, ARC-style
@@ -54,7 +54,7 @@ if (!project) {
       .map(
         (src, i) => `
       <li class="pd-shot">
-        <img src="${src}" loading="lazy" decoding="async" width="1400" height="933" alt="${title}, photo ${i + 1} — placeholder" />
+        <img src="${src}" loading="lazy" decoding="async" width="1400" height="933" alt="${title}, photo ${i + 1}, placeholder" />
         <span class="pd-shot-n">${String(i + 1).padStart(2, "0")}</span>
       </li>`
       )

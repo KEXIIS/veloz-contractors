@@ -4,7 +4,7 @@ import { animate } from "motion";
 
 /**
  * Spring a single value, interruptible. Returns controls with .stop().
- * damping 1 = critically damped (default). <1 adds bounce — only use it
+ * damping 1 = critically damped (default). <1 adds bounce - only use it
  * when the gesture actually carried momentum.
  */
 export function springTo(from, to, { velocity = 0, damping = 1, response = 0.45, onUpdate, onComplete } = {}) {

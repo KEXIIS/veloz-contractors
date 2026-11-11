@@ -1,5 +1,5 @@
 // ============================================================================
-// VELOZ CONTRACTORS — site config.
+// VELOZ CONTRACTORS - site config.
 // Everything the owner may need to change lives here.
 // Lines marked TODO are placeholders waiting for real info.
 // ============================================================================
@@ -31,7 +31,7 @@ export const config = {
     instagram: "https://www.instagram.com/velozcontractors/",
     instagramHandle: "@velozcontractors",
 
-    // ── TODO: PLACEHOLDER — fill in when known ───────────────────────────────
+    // ── TODO: PLACEHOLDER - fill in when known ───────────────────────────────
     email: "", // TODO: real email, e.g. "info@velozcontractors.com". Hidden on the site while empty.
     // ────────────────────────────────────────────────────────────────────────
   },
@@ -55,7 +55,7 @@ export const config = {
     { id: "alexa", quote: "I loved my remodel. 100% recommended for any house projects. very professional and very trust worthy. clean and neat which is an A+ for me.", author: "Alexa V." },
   ],
 
-  // Services on the home page — ids map to photos in /public/img
+  // Services on the home page - ids map to photos in /public/img
   services: [
     { id: "kitchens", photo: "/img/kitchen-after-2.jpg" },
     { id: "bathrooms", photo: "/img/bath-after-2.jpg" },
@@ -65,7 +65,7 @@ export const config = {
   ],
 
   // ==========================================================================
-  // PROJECTS — TODO: these are SAMPLE entries built from the kinds of work on
+  // PROJECTS - TODO: these are SAMPLE entries built from the kinds of work on
   // their Instagram (wood kitchens, LED-mirror baths, closets, media walls,
   // porcelain floors). Replace titles, copy and photos with real jobs.
   // `review` links a real Google review that matches the type of work.
@@ -195,24 +195,24 @@ export const config = {
   // Page titles + descriptions, per page and language
   seo: {
     home: {
-      en: ["Veloz Contractors — Kitchen & Bathroom Remodeling in Hialeah, FL", "Luxury home remodels in Hialeah and South Florida: kitchens, bathrooms, full homes, tile and emergency repairs. 4.8 stars on Google. Call 786-506-1891."],
-      es: ["Veloz Contractors — Remodelación de Cocinas y Baños en Hialeah, FL", "Remodelaciones de lujo en Hialeah y el sur de la Florida: cocinas, baños, casas completas, pisos y emergencias. 4.8 estrellas en Google. Llama al 786-506-1891."],
+      en: ["Veloz Contractors | Kitchen & Bathroom Remodeling in Hialeah, FL", "Luxury home remodels in Hialeah and South Florida: kitchens, bathrooms, full homes, tile and emergency repairs. 4.8 stars on Google. Call 786-506-1891."],
+      es: ["Veloz Contractors | Remodelación de Cocinas y Baños en Hialeah, FL", "Remodelaciones de lujo en Hialeah y el sur de la Florida: cocinas, baños, casas completas, pisos y emergencias. 4.8 estrellas en Google. Llama al 786-506-1891."],
     },
     projects: {
-      en: ["Projects — Veloz Contractors, Hialeah FL", "Kitchens, bathrooms, closets, floors and full home remodels by Veloz Contractors in South Florida."],
-      es: ["Proyectos — Veloz Contractors, Hialeah FL", "Cocinas, baños, closets, pisos y remodelaciones completas de Veloz Contractors en el sur de la Florida."],
+      en: ["Projects | Veloz Contractors, Hialeah FL", "Kitchens, bathrooms, closets, floors and full home remodels by Veloz Contractors in South Florida."],
+      es: ["Proyectos | Veloz Contractors, Hialeah FL", "Cocinas, baños, closets, pisos y remodelaciones completas de Veloz Contractors en el sur de la Florida."],
     },
     project: {
-      en: ["{title} — Veloz Contractors", "{scope}. A Veloz Contractors project in South Florida."],
-      es: ["{title} — Veloz Contractors", "{scope}. Un proyecto de Veloz Contractors en el sur de la Florida."],
+      en: ["{title} | Veloz Contractors", "{scope}. A Veloz Contractors project in South Florida."],
+      es: ["{title} | Veloz Contractors", "{scope}. Un proyecto de Veloz Contractors en el sur de la Florida."],
     },
     process: {
-      en: ["How we work — Veloz Contractors, Hialeah FL", "From the first call to the final walkthrough: how a Veloz Contractors remodel runs."],
-      es: ["Cómo trabajamos — Veloz Contractors, Hialeah FL", "De la primera llamada al recorrido final: así corre una remodelación con Veloz Contractors."],
+      en: ["How we work | Veloz Contractors, Hialeah FL", "From the first call to the final walkthrough: how a Veloz Contractors remodel runs."],
+      es: ["Cómo trabajamos | Veloz Contractors, Hialeah FL", "De la primera llamada al recorrido final: así corre una remodelación con Veloz Contractors."],
     },
     contact: {
-      en: ["Contact — Veloz Contractors, Hialeah FL", "Tell us about your home. Call 786-506-1891, DM us on Instagram or send a message. 8075 W 23rd Ave, Hialeah, FL."],
-      es: ["Contacto — Veloz Contractors, Hialeah FL", "Cuéntanos de tu casa. Llama al 786-506-1891, escríbenos por Instagram o mándanos un mensaje. 8075 W 23rd Ave, Hialeah, FL."],
+      en: ["Contact | Veloz Contractors, Hialeah FL", "Tell us about your home. Call 786-506-1891, DM us on Instagram or send a message. 8075 W 23rd Ave, Hialeah, FL."],
+      es: ["Contacto | Veloz Contractors, Hialeah FL", "Cuéntanos de tu casa. Llama al 786-506-1891, escríbenos por Instagram o mándanos un mensaje. 8075 W 23rd Ave, Hialeah, FL."],
     },
   },
 
@@ -232,20 +232,20 @@ export const config = {
       letsTalk: "Let's talk",
       slogan: "You dream it, we build it.",
 
-      // home — hero + info strip
+      // home - hero + info strip
       stripPlace: "Hialeah · South Florida",
       stripTrade: "Luxury remodels & builds",
       stripRating: "105 Google reviews",
       stripHours: "Mon–Sat 7–5",
       heroTagline: "Kitchens, bathrooms and full home remodels in Hialeah.",
 
-      // home — sketch
+      // home - sketch
       sketchTitle: "First the sketch. Then the keys.",
-      sketchSub: "Keep scrolling — watch the plan become the kitchen.",
+      sketchSub: "Keep scrolling and watch the plan become the kitchen.",
       sketchChipPlan: "The plan",
       sketchChipBuilt: "Built",
 
-      // home — before/after
+      // home - before/after
       baTitle: "Drag it. See the difference.",
       baSub: "Same room, before and after.",
       baBefore: "Before",
@@ -253,10 +253,10 @@ export const config = {
       baHandle: "Compare before and after",
       baHint: "Drag the handle, or use the arrow keys",
 
-      // home — services
+      // home - services
       svcTitle: "Five things we do all day.",
       svcKitchensName: "Kitchens",
-      svcKitchensLine1: "Cabinets, counters, plumbing and electrical — one crew, start to finish.",
+      svcKitchensLine1: "Cabinets, counters, plumbing and electrical. One crew, start to finish.",
       svcKitchensLine2: "Site left clean and neat.",
       svcBathroomsName: "Bathrooms",
       svcBathroomsLine1: "Tile, vanities, glass and waterproofing done right the first time.",
@@ -269,10 +269,10 @@ export const config = {
       svcTileLine2: "Straight lines you can check with your own level.",
       svcEmergencyName: "Emergency repairs",
       svcEmergencyLine1: "A leak doesn't wait for Monday. Neither do we.",
-      svcEmergencyLine2: "Call first — we move on the phone call.",
+      svcEmergencyLine2: "Call first. We move on the phone call.",
       svcSeeProjects: "See the projects",
 
-      // home — teasers
+      // home - teasers
       featTitle: "Recent work",
       featAll: "All projects",
       procTeaserTitle: "No mystery, start to finish.",
@@ -320,7 +320,7 @@ export const config = {
       prTitle: "How we work",
       prIntro: "From the first call to the final walkthrough, you always know what's happening and what comes next.",
       prV1Title: "Straight answers",
-      prV1Text: "A real number, fast — and no surprises halfway through.",
+      prV1Text: "A real number, fast, and no surprises halfway through.",
       prV2Title: "Clean, and on time",
       prV2Text: "A neat site every day, and a finish date we hold ourselves to.",
       prStepsTitle: "Step by step",
@@ -330,7 +330,7 @@ export const config = {
       pr1B2: "Or DM us on Instagram",
       pr1B3: "Photos help us price it right",
       pr2Name: "Quote",
-      pr2Text: "A clear number with the scope written out — usually in about a day.",
+      pr2Text: "A clear number with the scope written out, usually in about a day.",
       pr2B1: "Line-by-line scope",
       pr2B2: "Material options",
       pr2B3: "No mystery math",
@@ -355,7 +355,7 @@ export const config = {
 
       // contact page
       ctTitle: "Let's talk about your home.",
-      ctIntro: "Tell us what you have in mind. We'll get back to you to talk it through — and we'll stay in touch from the first call to the final walkthrough.",
+      ctIntro: "Tell us what you have in mind. We'll get back to you to talk it through, and we'll stay in touch from the first call to the final walkthrough.",
       ctFormTitle: "Send us a message",
       fName: "Your name",
       fPhone: "Phone",
@@ -390,15 +390,15 @@ export const config = {
       fSending: "Sending…",
       fErrName: "We need a name to ask for.",
       fErrPhone: "That number looks short.",
-      fErrType: "Pick one — “something else” counts.",
+      fErrType: "Pick one. “Something else” counts.",
       fErrSend: "That didn't go through. Try again, or just call {phone}.",
-      fSuccess: "Thanks, {name}. Your message is in — we'll reach out soon, and we'll keep you posted at every step.",
+      fSuccess: "Thanks, {name}. Your message is in. We'll reach out soon and keep you posted at every step.",
       fEdit: "Edit message",
       ctTalkTitle: "Rather talk?",
-      ctTalkText: "Call or DM us — whatever's easier for you.",
+      ctTalkText: "Call or DM us, whatever's easier for you.",
       ctDm: "DM on Instagram",
       ctStayTitle: "Stay in touch",
-      ctStayText: "New projects go up on Instagram first — before and afters, progress and finished rooms.",
+      ctStayText: "New projects go up on Instagram first: before and afters, progress and finished rooms.",
       ctFollow: "Follow {handle}",
 
       // footer
@@ -446,7 +446,7 @@ export const config = {
       heroTagline: "Cocinas, baños y remodelaciones completas en Hialeah.",
 
       sketchTitle: "Primero el plano. Después las llaves.",
-      sketchSub: "Sigue bajando — mira el plano convertirse en la cocina.",
+      sketchSub: "Sigue bajando y mira el plano convertirse en la cocina.",
       sketchChipPlan: "El plano",
       sketchChipBuilt: "Terminado",
 
@@ -459,7 +459,7 @@ export const config = {
 
       svcTitle: "Cinco cosas que hacemos todos los días.",
       svcKitchensName: "Cocinas",
-      svcKitchensLine1: "Gabinetes, mesetas, plomería y electricidad — una sola cuadrilla de principio a fin.",
+      svcKitchensLine1: "Gabinetes, mesetas, plomería y electricidad. Una sola cuadrilla de principio a fin.",
       svcKitchensLine2: "El área queda limpia y recogida.",
       svcBathroomsName: "Baños",
       svcBathroomsLine1: "Azulejos, vanities, cristales e impermeabilización bien hechos a la primera.",
@@ -472,7 +472,7 @@ export const config = {
       svcTileLine2: "Líneas derechas que puedes revisar con tu propio nivel.",
       svcEmergencyName: "Reparaciones de emergencia",
       svcEmergencyLine1: "Una fuga no espera al lunes. Nosotros tampoco.",
-      svcEmergencyLine2: "Llama primero — arrancamos con la llamada.",
+      svcEmergencyLine2: "Llama primero. Arrancamos con la llamada.",
       svcSeeProjects: "Ver los proyectos",
 
       featTitle: "Trabajos recientes",
@@ -518,7 +518,7 @@ export const config = {
       prTitle: "Cómo trabajamos",
       prIntro: "De la primera llamada al recorrido final, siempre sabes qué está pasando y qué viene después.",
       prV1Title: "Respuestas claras",
-      prV1Text: "Un número real, rápido — y sin sorpresas a mitad de obra.",
+      prV1Text: "Un número real, rápido y sin sorpresas a mitad de obra.",
       prV2Title: "Limpio y a tiempo",
       prV2Text: "El área recogida cada día, y una fecha de entrega que cumplimos.",
       prStepsTitle: "Paso a paso",
@@ -528,7 +528,7 @@ export const config = {
       pr1B2: "O escríbenos por Instagram",
       pr1B3: "Las fotos nos ayudan a dar un buen precio",
       pr2Name: "Presupuesto",
-      pr2Text: "Un número claro con el alcance por escrito — por lo general en un día.",
+      pr2Text: "Un número claro con el alcance por escrito, por lo general en un día.",
       pr2B1: "Alcance detallado",
       pr2B2: "Opciones de materiales",
       pr2B3: "Sin matemática misteriosa",
@@ -587,15 +587,15 @@ export const config = {
       fSending: "Enviando…",
       fErrName: "Necesitamos un nombre para preguntar por ti.",
       fErrPhone: "Ese número se ve corto.",
-      fErrType: "Elige uno — “otra cosa” también vale.",
+      fErrType: "Elige uno. “Otra cosa” también vale.",
       fErrSend: "No se envió. Inténtalo otra vez o llama al {phone}.",
-      fSuccess: "Gracias, {name}. Ya recibimos tu mensaje — te contactamos pronto, y te mantenemos al tanto en cada paso.",
+      fSuccess: "Gracias, {name}. Ya recibimos tu mensaje. Te contactamos pronto y te mantenemos al tanto en cada paso.",
       fEdit: "Corregir mensaje",
       ctTalkTitle: "¿Prefieres hablar?",
-      ctTalkText: "Llámanos o escríbenos por Instagram — como te sea más fácil.",
+      ctTalkText: "Llámanos o escríbenos por Instagram, como te sea más fácil.",
       ctDm: "Escríbenos por Instagram",
       ctStayTitle: "Sigamos en contacto",
-      ctStayText: "Los proyectos nuevos salen primero en Instagram — antes y después, avances y cuartos terminados.",
+      ctStayText: "Los proyectos nuevos salen primero en Instagram: antes y después, avances y cuartos terminados.",
       ctFollow: "Sigue a {handle}",
 
       ftVisit: "Dónde estamos",

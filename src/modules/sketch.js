@@ -1,5 +1,5 @@
 // The signature section: a pinned, scrubbed (and therefore reversible)
-// timeline — the kitchen draws itself in thin strokes, then the finished
+// timeline - the kitchen draws itself in thin strokes, then the finished
 // photo rises through the sketch. GSAP ScrollTrigger is used only here.
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
