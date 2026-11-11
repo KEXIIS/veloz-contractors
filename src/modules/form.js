@@ -133,6 +133,13 @@ export function initForm() {
     const bad = Object.keys(RULES).filter((n) => !check(n));
     if (bad.length) { form.elements[bad[0]].focus(); return; }
 
+    // reCAPTCHA (production only; Netlify injects window.grecaptcha + the widget)
+    let captchaToken = "";
+    if (!import.meta.env.DEV && window.grecaptcha) {
+      captchaToken = window.grecaptcha.getResponse();
+      if (!captchaToken) { setError("global", "fErrCaptcha"); return; }
+    }
+
     const data = new FormData(form);
     submitBtn.disabled = true;
     const label = submitBtn.querySelector("span");
@@ -144,12 +151,14 @@ export function initForm() {
           const v = data.get(k);
           if (v) data.set(k, LABELS[k][v] || v);
         }
+        if (captchaToken) data.set("g-recaptcha-response", captchaToken);
         // phone photos are huge; shrink them (Netlify takes one file per field)
         const shrunk = await Promise.all([...photos.files].slice(0, MAX_PHOTOS).map(shrink));
         data.delete("photos");
         shrunk.forEach((file, i) => data.set("photo" + (i + 1), file, file.name));
         const res = await fetch(form.getAttribute("action"), { method: "POST", body: data });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        window.grecaptcha?.reset?.();
       } else {
         await new Promise((r) => setTimeout(r, 900));
         console.info("[contact] demo mode (dev only). Data:",
